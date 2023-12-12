@@ -1,0 +1,26 @@
+{
+  "center": [16.746778, 100.195167],
+  "markers": [
+    {
+      "id" : "CAMERA_1",
+      "name" : "CAMERA 1",
+      "type": "Point",
+      "coordinate": [16.745915, 100.205724],
+      "url" : "http://localhost/videos/stream.m3u8"
+    },
+    {
+      "id" : "CAMERA_2",
+      "name" : "CAMERA 2",
+      "type": "Point",
+      "coordinate": [16.753765, 100.190918],
+      "url" : "http://localhost:9000/video"
+    },
+    {
+      "id" : "CAMERA_3",
+      "name" : "CAMERA 3",
+      "type": "Point",
+      "coordinate": [16.741025, 100.187871],
+      "url" : "http://"
+    }
+  ]
+}
