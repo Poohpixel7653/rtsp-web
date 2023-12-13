@@ -1,9 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Modal.css";
 import ReactPlayer from "react-player";
+import ReactHlsPlayer from "react-hls-player";
 
-function Modal({ camera,setOpenModal, url }) {
-  console.log(camera, setOpenModal, url);
+function Modal({ camera, setOpenModal, url }) {
+  const playerRef = React.useRef();
+
+  useEffect(() => {
+    function fireOnVideoStart() {
+      // Do some stuff when the video starts/resumes playing
+    }
+
+    playerRef.current.addEventListener("play", fireOnVideoStart);
+
+    return playerRef.current.removeEventListener("play", fireOnVideoStart);
+  }, []);
+
+  useEffect(() => {
+    function fireOnVideoEnd() {
+      // Do some stuff when the video ends
+    }
+
+    playerRef.current.addEventListener("ended", fireOnVideoEnd);
+
+    return playerRef.current.removeEventListener("ended", fireOnVideoEnd);
+  }, []);
+
   return (
     <div className="modalBackground">
       <div className="modalContainer">
@@ -21,7 +43,8 @@ function Modal({ camera,setOpenModal, url }) {
         </div>
         <div className="body">
           <p>{url}</p>
-          <ReactPlayer url={url} />
+          <ReactHlsPlayer playerRef={playerRef} src={url} autoPlay />
+          {/* <ReactPlayer url={url} /> */}
         </div>
       </div>
     </div>

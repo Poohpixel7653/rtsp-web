@@ -4,9 +4,8 @@ import Modal from "./components/Modal";
 
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import Marks from "./jsons/markers.json";
-import ReacePlayerWebSocket from "./components/ReactPlayerWebSocket";
 import io from "socket.io-client"; // Add this
-import VideoStream from "./components/VideoStream";
+
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
