@@ -2,25 +2,25 @@
   "center": [16.746778, 100.195167],
   "markers": [
     {
-      "id" : "CAMERA_1",
-      "name" : "CAMERA 1",
+      "id": "CAMERA_1",
+      "name": "CAMERA 1",
       "type": "Point",
       "coordinate": [16.745915, 100.205724],
-      "url" : "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+      "url": "http://localhost/videos/stream.m3u8"
     },
     {
-      "id" : "CAMERA_2",
-      "name" : "CAMERA 2",
+      "id": "CAMERA_2",
+      "name": "CAMERA 2",
       "type": "Point",
       "coordinate": [16.753765, 100.190918],
-      "url" : "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+      "url": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
     },
     {
-      "id" : "CAMERA_3",
-      "name" : "CAMERA 3",
+      "id": "CAMERA_3",
+      "name": "CAMERA 3",
       "type": "Point",
       "coordinate": [16.741025, 100.187871],
-      "url" : "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
+      "url": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8"
     }
   ]
 }

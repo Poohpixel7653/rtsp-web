@@ -43,7 +43,7 @@ function Modal({ camera, setOpenModal, url }) {
         </div>
         <div className="body">
           <p>{url}</p>
-          <ReactHlsPlayer playerRef={playerRef} src={url} autoPlay />
+          <ReactHlsPlayer width={768} height={432} playerRef={playerRef} src={url} autoPlay />
           {/* <ReactPlayer url={url} /> */}
         </div>
       </div>
